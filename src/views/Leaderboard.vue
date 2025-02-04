@@ -5,7 +5,11 @@
       <!-- Search & Sort Controls -->
       <v-row>
         <v-col cols="12" md="6">
-          <v-text-field v-model="search" label="Search Achievements" prepend-inner-icon="mdi-magnify"></v-text-field>
+          <v-text-field
+            v-model="search"
+            label="Search Achievements"
+            prepend-inner-icon="mdi-magnify"
+          ></v-text-field>
         </v-col>
         <v-col cols="12" md="6">
           <v-select
@@ -22,20 +26,20 @@
         :items="filteredAchievements"
         :headers="headers"
         :sort-by="sortBy"
-        class="elevation-2"
+        class="elevation-2 leaderboard-table"
       >
         <template v-slot:item.rank="{ item }">
           <strong>#{{ item.rank }}</strong>
         </template>
   
         <template v-slot:item.image="{ item }">
-          <v-avatar size="50">
-            <img :src="item.image" alt="Achievement">
+          <v-avatar size="50" class="mx-auto">
+            <img :src="item.image" alt="Achievement" class="leaderboard-image">
           </v-avatar>
         </template>
   
         <template v-slot:item.name="{ item }">
-          <strong>{{ item.name }}</strong>
+          <strong class="truncate-text">{{ item.name }}</strong>
         </template>
   
         <template v-slot:item.distance="{ item }">
@@ -60,7 +64,7 @@
     data() {
       return {
         search: "",
-        sortBy: [{ key: "distance", order: "asc" }], // ✅ Fix: Vuetify expects an array
+        sortBy: [{ key: "distance", order: "asc" }], // ✅ Vuetify expects an array
         sortOptions: [
           { title: "Rank", value: [{ key: "rank", order: "asc" }] },
           { title: "Name", value: [{ key: "name", order: "asc" }] },
@@ -68,13 +72,13 @@
           { title: "Date", value: [{ key: "date", order: "asc" }] }
         ],
         headers: [
-          { text: "#", value: "rank" },
-          { text: "Image", value: "image", sortable: false },
-          { text: "Achievement", value: "name" },
-          { text: "Category", value: "category" },
-          { text: "Distance (km)", value: "distance" },
-          { text: "Date", value: "date" },
-          { text: "More Info", value: "link", sortable: false }
+          { text: "#", value: "rank", width: "60px" },
+          { text: "Image", value: "image", sortable: false, width: "80px" },
+          { text: "Achievement", value: "name", width: "300px" },
+          { text: "Category", value: "category", width: "150px" },
+          { text: "Distance (km)", value: "distance", width: "120px" },
+          { text: "Date", value: "date", width: "120px" },
+          { text: "More Info", value: "link", sortable: false, width: "80px" }
         ],
         achievements: [
           {
@@ -136,9 +140,38 @@
   </script>
   
   <style scoped>
+  /* Ensure images align properly */
+  .leaderboard-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Ensure text doesn’t overflow */
+  .truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px; /* Adjust based on layout */
+  }
+  
+  /* Ensure table row alignment */
+  .v-data-table >>> tr {
+    height: 64px; /* Set row height */
+    vertical-align: middle;
+  }
+  
+  /* Improve leaderboard styling */
+  .leaderboard-table {
+    background-color: #1e1e1e; /* Dark theme */
+    border-radius: 10px;
+  }
+  
   h1 {
     font-size: 2rem;
     font-weight: bold;
+    color: white;
+    text-align: center;
   }
   </style>
   
