@@ -37,19 +37,6 @@
           </v-col>
         </v-row>
       </v-container>
-  
-      <!-- Footer -->
-      <v-footer color="grey-darken-4" dark class="text-center pa-4">
-        <v-container>
-          <p>© 2025 People Are Awesome. Made with ❤️ for humanity.</p>
-          <v-btn icon href="https://twitter.com/" target="_blank">
-            <v-icon>mdi-twitter</v-icon>
-          </v-btn>
-          <v-btn icon href="https://github.com/" target="_blank">
-            <v-icon>mdi-github</v-icon>
-          </v-btn>
-        </v-container>
-      </v-footer>
     </v-app>
   </template>
   
