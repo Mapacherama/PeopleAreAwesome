@@ -1,7 +1,9 @@
 <template>
     <v-app-bar app color="grey-darken-4" dense dark>
-      <!-- Logo / Title -->
-      <v-toolbar-title class="title">People Are Awesome</v-toolbar-title>
+      <!-- Clickable Title Linking to Home -->
+      <router-link to="/" class="title-link">
+        <v-toolbar-title class="title">People Are Awesome</v-toolbar-title>
+      </router-link>
   
       <v-spacer></v-spacer>
   
@@ -38,9 +40,20 @@
   </script>
   
   <style scoped>
+  /* Styling the Clickable Title */
+  .title-link {
+    text-decoration: none;
+    color: white; /* Ensures color consistency */
+  }
+  
+  .title-link:hover {
+    opacity: 0.8;
+  }
+  
   .title {
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
   }
   </style>
   

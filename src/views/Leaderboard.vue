@@ -60,8 +60,13 @@
     data() {
       return {
         search: "",
-        sortBy: "distance",
-        sortOptions: ["rank", "name", "distance", "date"],
+        sortBy: [{ key: "distance", order: "asc" }], // ✅ Fix: Vuetify expects an array
+        sortOptions: [
+          { title: "Rank", value: [{ key: "rank", order: "asc" }] },
+          { title: "Name", value: [{ key: "name", order: "asc" }] },
+          { title: "Distance", value: [{ key: "distance", order: "asc" }] },
+          { title: "Date", value: [{ key: "date", order: "asc" }] }
+        ],
         headers: [
           { text: "#", value: "rank" },
           { text: "Image", value: "image", sortable: false },
