@@ -1,13 +1,5 @@
 <template>
-    <v-app>
-      <!-- Navbar -->
-      <v-app-bar app color="grey-darken-4" dense dark>
-        <v-toolbar-title>People Are Awesome</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn text to="/achievements">Explore</v-btn>
-        <v-btn text to="/about">About</v-btn>
-      </v-app-bar>
-  
+    <v-app> 
       <!-- Hero Section -->
       <v-container fluid class="hero-section">
         <v-row align="center" justify="center">
