@@ -9,7 +9,9 @@
 
     <!-- Desktop Navigation -->
     <v-btn text to="/achievements" class="nav-button d-none d-md-flex">Explore</v-btn>
+    <v-btn text to="/leaderboard" class="nav-button d-none d-md-flex">Leaderboard</v-btn>
     <v-btn text to="/about" class="nav-button d-none d-md-flex">About</v-btn>
+
 
     <!-- Mobile Menu -->
     <v-app-bar-nav-icon class="menu-icon d-md-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
