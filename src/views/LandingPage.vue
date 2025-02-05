@@ -43,7 +43,7 @@ export default {
           description: "🏁 Distance: 5,000 km (3,100 miles)\n⏳ Time: 42 days, 6 hours, 30 minutes\n🔥 Feat: Averaged 70+ miles per day (over two marathons daily).",
           category: "Ultra Running",
           date: "2016",
-          image: "https://upload.wikimedia.org/wikipedia/commons/2/29/Ultrarunner_Pete_Kostelnick.jpg",
+          image: "https://s3.amazonaws.com/images.gearjunkie.com/uploads/2016/10/transcontinental-record-pete-.jpg",
           source: "https://www.petekostelnick.com/"
         },
         {
@@ -52,7 +52,7 @@ export default {
           description: "📍 Route: Around the world\n🏁 Distance: 29,000 km (18,000 miles)\n⏳ Time: 78 days, 14 hours, 40 minutes\n🔥 Feat: Averaged 370 km per day.",
           category: "Ultra Cycling",
           date: "2017",
-          image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Mark_Beaumont.jpg",
+          image: "https://www.guinnessworldrecords.com/news/2017/9/images/fastest-circumnavigation-by-bicycle-495073.jpg",
           source: "https://en.wikipedia.org/wiki/Mark_Beaumont_(cyclist)"
         },
         {
@@ -61,7 +61,7 @@ export default {
           description: "📍 Route: Swam around the coast of Great Britain\n🏁 Distance: 3,218 km (2,000 miles)\n⏳ Time: 157 days\n🔥 Feat: Swam 6 hours on, 6 hours off every day.",
           category: "Extreme Swimming",
           date: "2018",
-          image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Ross_Edgley.jpg",
+          image: "https://www.bodybuilding.com/images/2018/june/meet-the-muscular-madman-whos-swimming-around-great-britain-header-960x540.jpg",
           source: "https://www.redbull.com/gb-en/ross-edgley-great-british-swim"
         }
       ]

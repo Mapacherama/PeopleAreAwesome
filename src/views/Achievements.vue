@@ -33,7 +33,7 @@ export default {
           description: "🏁 Races Completed: Leadville 100, Western States 100, Ultra-Trail du Mont-Blanc (UTMB)\n🔥 Feat: After a mountain running accident crushed his leg, he chose amputation over reconstruction to continue competing.\n✨ Remarkable Achievement: Became the first amputee to finish Leadman (Leadville 100 + multiple ultras & bike races in one season).",
           category: "Ultra Running",
           date: "2017",
-          image: "https://trailrunnermag.com/wp-content/uploads/2021/10/Dave-Mackey-by-Andy-Wickstrom-1.jpg",
+          image: "https://cdn.outsideonline.com/wp-content/uploads/2019/10/17/dave-mackey-run_s.jpg",
           source: "https://www.trailrunnermag.com/people/dave-mackey-ultrarunning-amputee-comeback/"
         },
         {
