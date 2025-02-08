@@ -86,7 +86,7 @@ export default {
           distance: 5000,
           date: "2016",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/29/Ultrarunner_Pete_Kostelnick.jpg",
-          link: "https://www.petekostelnick.com/"
+          link: "https://www.runnersworld.com/news/a20828478/ultrarunner-pete-kostelnick-smashes-record-for-run-across-u-s/"
         },
         {
           rank: 3,
